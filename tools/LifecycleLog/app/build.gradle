@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'com.google.gms.google-services'
 }
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 29
@@ -35,4 +36,9 @@ android {
 
 dependencies {
     implementation 'com.android.support:support-v4:20.+'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+
+repositories {
+    mavenCentral()
 }
