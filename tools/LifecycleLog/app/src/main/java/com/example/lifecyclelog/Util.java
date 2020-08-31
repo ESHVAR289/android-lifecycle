@@ -12,7 +12,6 @@ public final class Util {
         CALL_TO_SUPER,
         RETURN_FROM_SUPER
     }
-
     public static void recLifeCycle(Class<?> callingClass, LifecycleState state) {
         final String note;
         switch (state) {
